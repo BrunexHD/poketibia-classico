@@ -93,7 +93,7 @@ ENV TZ=Etc/UTC
 VOLUME [ "/data" ]
 
 COPY --from=build /srv/build/linux-release/bin/canary /bin/canary
-COPY LICENSE *.sql key.pem /canary/
+COPY LICENSE *.sql /canary/
 COPY data /canary/data
 COPY data-canary /canary/data-canary
 COPY data-otservbr-global /canary/data-otservbr-global
